@@ -8,18 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <h2 class="mt-5 d-flex justify-content-center">Search Your Desire Book</h2>
+    <!-- Headline -->
+    <h2 class="mt-5 d-flex justify-content-center">Book Archive</h2>
 
     <!-- Input field and button area -->
 
     <div class="input-group mb-3d-flex justify-content-center mx-auto w-50 mb-5">
-        <input id="search-field" type="text" class="form-control" placeholder="Search Your book" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <input id="search-field" type="text" class="form-control" placeholder="Search your desire book" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button onclick = "searchBook ()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
     </div>
     <!-- Error Div -->
     <div id="error-handle" class="mb-3d-flex justify-content-center mx-auto w-50 mb-5" ></div>
     <!-- Show search Book Number -->
-    <div id="show-search-result" class="row row-cols-1 row-cols-md-3 g-4 "></div>
+    <div id="search-counter" class="mb-3d-flex justify-content-center mx-auto w-50 mb-5"></div>
     <!--Show Result Div -->
     <div id="book-search-result" class="row row-cols-1 row-cols-md-3 g-4"></div>
     
