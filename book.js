@@ -43,13 +43,13 @@ const displaySearchResult = (docs) =>{
 
         const div = document.createElement('div');
         div.classList.add('col')
-        div.innerHTML = ` <div class="card">
-        <img src="http://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg" class="card-img-top" alt="...">
+        div.innerHTML = ` <div class="card d-flex align-items-center justify-content-center">
+        <img class="d-flex align-items-center justify-content-center p-5 " src="http://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Book Name :"${doc.subject}"</h5>
+          <h5 class="card-title">Book Name :"${doc.title}"</h5>
           <p class="card-text"><small>Author:<b> ${doc.author_name}</b></small></p>
-          <p class="card-text">First Publish : <b>${doc.first_publish_year}</b></p>
-          <p class="card-text">Publisher : <b>${doc.publisher}</b></p>
+          <p class="card-text">First Publish : <b>${doc.publish_date[0]}</b></p>
+          <p class="card-text">Publisher : <b>${doc.publisher[0]}</b></p>
          
         </div>
         
